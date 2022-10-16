@@ -44,7 +44,27 @@ header li{
 header li a{
     padding: 5px 10px;
     color: #ffffff;
+    margin-bottom: 5px;
+    position: relative;
 }
+
+header li a::before{
+    content: " ";
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 2s;
+}
+header li a:hover::before{
+    width: 100%;
+}
+
+
+
+
 main{
     padding: 60px;
     padding-bottom: 300px;
@@ -75,6 +95,13 @@ main{
 .instagram{
     background-image: url(../img/instagram.png);
 }
+.facebook:hover{
+    background-image: url(../img/fb\ sxvaferi.png);
+}
+.instagram:hover{
+    background-image: url(../img/ins\ sxvaferi.png);
+}
+
 article{
     float: left;
     margin-left: 70px;
@@ -91,6 +118,7 @@ h4 {
     margin-top: 30px;
     border: 2px solid black;
     position: relative;
+    
 }
 .surati{
     width:100%;
@@ -111,6 +139,16 @@ h4 {
     right: 0;
     position: absolute;
 }
+.musicbox:hover{
+    box-shadow: 0 0 10px black;
+}
+.kvadratuka:hover{
+    background-image: url(../img/yellow.png);
+}
+article a:hover{
+    text-decoration: underline;
+}
+
 .erti{
     clear: both;
 }
@@ -166,6 +204,11 @@ article h5{
     clear: both;
     box-sizing: border-box;
     margin: 500px 500px 100px 500px; 
+}
+article:hover{
+    background-color: #b7b7b7;
+    box-shadow: 0 0 10px #b7b7b7;
+
 }
 .morcha{
     font-size: 50px;
